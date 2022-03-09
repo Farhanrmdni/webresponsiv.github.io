@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #ccc;
+}
+h1 {
+  background-color: #212529;
+  text-align: center;
+  width: 15%;
+  height: 40px;
+  color: rgb(162, 255, 235);
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 35%;
+}
+img {
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.tipe {
+  background-color: white;
+  color: black;
+}
+
+.terbang {
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+}
+
+.terbang .imgterbang {
+  width: 150px;
+  flex: 0 0 600px;
+}
+
+.terbang .imgterbang img {
+  width: 600px;
+  height: 300px;
+}
+
+.terbang .penerbangan {
+  padding-left: 20px;
+}
+
+.terbang .penerbangan h3 {
+  margin: 0;
+  color: blue;
+}
+
+.terbang .penerbangan p {
+  margin: 0;
+  padding: 10px 0 0;
+  text-align: justify;
+}
+.penerbangan {
+  background-color: white;
+  border-radius: 10%;
+  border: 5px solid #666;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+.kembali {
+  margin: auto;
+  width: 20%;
+  height: 40px;
+  background-color: #212529;
+  text-align: center;
+  font-size: 22px;
+  border-radius: 20%;
+  border: 5px solid #666;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+  color: rgb(162, 255, 235);
+  text-shadow: 0 0 10px rgb(155, 247, 204);
+}
+.kembali p a:hover {
+  color: yellow;
+}

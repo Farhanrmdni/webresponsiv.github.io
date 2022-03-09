@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #ccc;
+}
+h1 {
+  background-color: #212529;
+  text-align: center;
+  width: 15%;
+  height: 40px;
+  color: rgb(162, 255, 235);
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 35%;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+img {
+  width: 50%;
+  height: 500px;
+  margin-left: 300px;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+.bus {
+  margin: auto;
+  background-color: white;
+  width: 90%;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+.bus h4 {
+  padding-top: 20px;
+  margin-top: 20px;
+  padding-left: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.bus ul li {
+  margin: 1px;
+  padding-bottom: 10px;
+}
+.kembali {
+  margin: auto;
+  margin-top: 30px;
+  width: 20%;
+  height: 40px;
+  background-color: #212529;
+  text-align: center;
+  font-size: 22px;
+  border-radius: 20%;
+  border: 5px solid #666;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.kembali p a {
+  list-style: none;
+  text-decoration: none;
+  color: rgb(162, 255, 235);
+  text-shadow: 0 0 10px rgb(155, 247, 204);
+}
+.kembali p a:hover {
+  color: yellow;
+}
+/* Responsive breakpoint */
+
+/* Ukuran Tablet */
+@media screen and (max-width: 768px) {
+  img {
+    width: 600px;
+    margin: 10px;
+    padding-left: 50px;
+  }
+
+  .simbol {
+    padding-right: 10px;
+  }
+}
+
+/* Ukuran Mobile */
+@media screen and (max-width: 576px) {
+  img {
+    width: 450px;
+    padding-left: 10px;
+    margin-left: 20px;
+  }
+
+  .simbol {
+    padding-right: 10px;
+  }
+}

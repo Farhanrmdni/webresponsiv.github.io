@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #ccc;
+}
+h1 {
+  background-color: #212529;
+  text-align: center;
+  width: 15%;
+  height: 40px;
+  color: rgb(162, 255, 235);
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 35%;
+}
+.kategori {
+  background-color: white;
+  color: darkorange;
+}
+
+.box1 {
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+}
+
+.box1 .imgbx {
+  width: 150px;
+  flex: 0 0 600px;
+}
+
+.box1 .imgbx img {
+  width: 600px;
+  height: 300px;
+}
+
+.box1 .content {
+  padding-left: 20px;
+}
+
+.box1 .content h4 {
+  margin: 0;
+  color: blue;
+}
+
+.box1 .content p {
+  margin: 0;
+  padding: 10px 0 0;
+  text-align: justify;
+}
+.content {
+  background-color: white;
+  border-radius: 10%;
+  border: 5px solid #666;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+.kembali {
+  margin: auto;
+  width: 20%;
+  height: 40px;
+  background-color: #212529;
+  text-align: center;
+  font-size: 22px;
+  border-radius: 20%;
+  border: 5px solid #666;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+  color: rgb(162, 255, 235);
+  text-shadow: 0 0 10px rgb(155, 247, 204);
+}
+.kembali p a:hover {
+  color: yellow;
+}
+/* Responsive breakpoint */
+
+/* Ukuran Tablet */
+@media screen and (max-width: 768px) {
+  .box1 .imgbx img {
+    width: 350px;
+  }
+
+  .content h4 {
+    padding: 20px;
+  }
+}
+
+/* Ukuran Mobile */
+@media screen and (max-width: 576px) {
+}

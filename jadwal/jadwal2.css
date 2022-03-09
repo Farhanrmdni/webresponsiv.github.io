@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  background-color: #ccc;
+}
+
+/*Navbar*/
+nav {
+  position: fixed;
+  display: flex;
+  background-color: #212529;
+  justify-content: space-around;
+
+  color: rgb(162, 255, 235);
+  height: 60px;
+  width: 100%;
+  align-items: center;
+}
+nav .logo {
+  font-family: 'Pacifico', cursive;
+  letter-spacing: 3px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-evenly;
+}
+nav ul li a {
+  color: rgb(162, 255, 235);
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: rgb(225, 255, 248);
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -5px;
+  top: -5px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: rgb(162, 255, 235);
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+/* hamburger menu animasi */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0;
+}
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+.menu-toggle input:checked ~ span:nth-child(2) {
+  background-color: white;
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+.menu-toggle input:checked ~ span:nth-child(4) {
+  background-color: white;
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+.menu-toggle input:checked ~ span:nth-child(3) {
+  transform: scale(0);
+}
+
+.main {
+  padding-top: 100px;
+}
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+  margin-bottom: 50px;
+  text-shadow: 2px 2px rgb(162, 255, 235);
+}
+
+h3 {
+  text-align: center;
+  margin: 50px 30px 20px 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h5 {
+  text-align: center;
+  font-size: 30px;
+  background-color: #212529;
+  color: rgb(162, 255, 235);
+  width: 20%;
+  height: 50px;
+  margin-left: 320px;
+
+  border-radius: 15%;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.tabel table {
+  margin: auto;
+  border: 3px solid;
+  background-color: ffff66;
+  width: 90%;
+}
+
+.tabel tr th {
+  border: 1px solid;
+}
+.kereta {
+  background-color: white;
+  width: 60%;
+  height: 750px;
+  margin: auto;
+  border-radius: 10%;
+  border: 5px solid #666;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+.kapal {
+  background-color: white;
+  width: 60%;
+  height: 420px;
+  margin: auto;
+  margin-top: 80px;
+  border-radius: 20%;
+  border: 5px solid #666;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+.pesawat {
+  background-color: white;
+  width: 60%;
+  height: 400px;
+  margin: auto;
+  margin-top: 80px;
+  border-radius: 20%;
+  border: 5px solid #666;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+.bus {
+  background-color: white;
+  width: 60%;
+  height: 400px;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  border-radius: 20%;
+  border: 5px solid #666;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+.footer {
+  background-color: #212529;
+
+  height: 50pxpx;
+  padding: 40px;
+  border-top: 10px solid #69f15d;
+}
+.footer p {
+  text-align: center;
+  color: rgb(162, 255, 235);
+}
+
+/* responsif breakpoint */
+
+/* 1200px untuk gambar sponsor */
+@media screen and (max-width: 1200px) {
+}
+/* Laptop/Dekstop */
+@media screen and (max-width: 992px) {
+  h5 {
+    margin: 0;
+    margin-left: 280px;
+    font-size: 25px;
+  }
+  .tabel table {
+    width: 90%;
+  }
+  .kereta {
+    width: 70%;
+    height: 1100px;
+  }
+  .kapal {
+    width: 70%;
+    height: 450px;
+  }
+  .pesawat {
+    width: 70%;
+    height: 490px;
+  }
+  .bus {
+    width: 70%;
+    height: 450px;
+  }
+}
+/* ukuran tablet */
+@media screen and (max-width: 768px) {
+  nav ul {
+    width: 50%;
+  }
+  h3 {
+    margin: 0;
+    margin: 30px 20px 20px 20px;
+  }
+  h5 {
+    margin: 0;
+    margin-left: 250px;
+    font-size: 25px;
+  }
+  .tabel table {
+    width: 90%;
+  }
+  .kereta {
+    width: 80%;
+    height: 1100px;
+  }
+  .kapal {
+    width: 85%;
+    height: 450px;
+  }
+  .pesawat {
+    width: 80%;
+    height: 490px;
+  }
+  .bus {
+    width: 80%;
+    height: 450px;
+  }
+}
+
+/* ukuran Mobile */
+@media screen and (max-width: 576px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    background-color: #212529;
+
+    transform: translateX(100%);
+    transition: all 1s;
+    opacity: 0;
+  }
+  nav ul.slide {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  h5 {
+    margin: 0;
+    margin-left: 210px;
+    font-size: 25px;
+  }
+  .tabel table {
+    width: 90%;
+  }
+  .kereta {
+    width: 90%;
+    height: 1150px;
+  }
+  .kapal {
+    width: 90%;
+    height: 450px;
+  }
+  .pesawat {
+    width: 95%;
+    height: 570px;
+  }
+  .bus {
+    width: 90%;
+    height: 550px;
+  }
+}
